@@ -67,6 +67,8 @@ livraison.on("input", function()
 /*fin de verification des regex*/
 
 
+
+
 /*menu deroulant*/
 
 (function ($, window, delay) {

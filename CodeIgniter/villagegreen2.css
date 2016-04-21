@@ -34,20 +34,12 @@
 	word-wrap: normal;
 }
 
-#drop1{
+#drop{
 	color:black;
 	margin-top: 20%;
+	margin-left: 25%;
 }
 
-#drop2{
-	color:black;
-	margin-top: 20%;
-}
-
-#drop3{
-	color:black;
-	margin-top: 20%;
-}
 
 #navbar2{
 	background-color: #857e77;

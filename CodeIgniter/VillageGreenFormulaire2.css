@@ -38,19 +38,14 @@ h4 {
 	margin-top: 0%;
 	margin-bottom: 0%;
 	font-size: 0.83em;
-	padding-top: 2%;
-	padding-bottom: 2%;
 	word-wrap: normal;
 }
 
-#menu span{
-	margin-left: 3%;	
+#drop{
+	color:black;
+	margin-top: 20%;
+	margin-left: 25%;
 }
-
-#menu span:hover{
-	cursor: pointer;
-}
-
 
 #logo{
 	width:50px;
