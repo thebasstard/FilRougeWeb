@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="http://127.0.0.1/VillageGreenWeb/CodeIgniter/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<!-- <link href="http://127.0.0.1/VillageGreenWeb/CodeIgniter/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
 		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-		<link href="http://127.0.0.1/VillageGreenWeb/CodeIgniter/villagegreen.css" rel="stylesheet">		
+		<!-- <link href="http://127.0.0.1/VillageGreenWeb/CodeIgniter/villagegreen.css" rel="stylesheet">	 -->	
 		<link href="villagegreen2.css" rel="stylesheet">
 		<title>Village Green magasin de musique en ligne</title>
 	</head>
@@ -297,9 +297,9 @@
 	</div>
 	</body>
 </html>
-<script src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/jquery.js"></script>
+<!-- <script src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/jquery.js"></script> -->
 <script src="jquery.js"></script>
-<script src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/bootstrap/js/bootstrap.min.js"></script> -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/VillageGreenFormulaire2.js"></script>
+<!-- <script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/VillageGreenFormulaire2.js"></script> -->
 <script type="text/javascript" src="VillageGreenFormulaire2.js"></script>
