@@ -31,17 +31,22 @@
 	margin-top: 0%;
 	margin-bottom: 0%;
 	font-size: 0.83em;
-	padding-top: 2%;
-	padding-bottom: 3%;
 	word-wrap: normal;
 }
 
-#menu span{
-	margin-left: 3%;
+#drop1{
+	color:black;
+	margin-top: 20%;
 }
 
-#menu span:hover{
-	cursor: pointer;
+#drop2{
+	color:black;
+	margin-top: 20%;
+}
+
+#drop3{
+	color:black;
+	margin-top: 20%;
 }
 
 #navbar2{

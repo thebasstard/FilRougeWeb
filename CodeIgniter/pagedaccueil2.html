@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<meta charset="utf-8">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- <link href="http://127.0.0.1/VillageGreenWeb/CodeIgniter/bootstrap/css/bootstrap.css" rel="stylesheet">
 		<link href="http://127.0.0.1/VillageGreenWeb/CodeIgniter/villagegreen.css" rel="stylesheet"> -->
 		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -43,12 +44,64 @@
 				</div>
 			</div>
 
-				
+			<div id="menu" class="navbar navbar-static">
+			  <div class="navbar-inner">
+			    <!-- <div class="container"> <a class="brand" href="#"></a> -->
 
-			<div id="menu" class="main-navigation" role="navigation">					
+			    <ul class="nav" role="navigation">
+			        <li class="dropdown col-xs-1 col-md-1"> <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Gui/Bass <b class="caret"></b></a>
+				        <ul
+				          class="dropdown-menu" role="menu" aria-labelledby="drop1">
+				            <li>
+				            	<a tabindex="-1" href="http://google.com">Guitares</a>
+				            </li>
+				            <li>
+				            	<a tabindex="-1" href="#anotherAction">Basses</a>
+				            </li>
+				            <li>
+				            	<a tabindex="-1" href="#">Amplification</a>
+				            </li>
+				            <li class="divider"></li>
+				            <li>
+				            	<a tabindex="-1" href="#">Cordes</a>
+				            </li>
+				      	</ul>
+			      </li>
+			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Batteries<b class="caret"></b></a>
+			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+			          <li><a tabindex="-1" href="#">Batteries acoustiques</a>
+			          </li>
+			          <li><a tabindex="-1" href="#">Batteries électroniques</a>
+			          </li>
+			          <li><a tabindex="-1" href="#">Cymbales</a>
+			          </li>
+			          <li class="divider"></li>
+			          <li><a tabindex="-1" href="#">Baguettes</a>
+			          </li>
+			        </ul>
+			      </li>
+			      <li class="dropdown col-xs-1 col-md-1"> <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Studio<b class="caret"></b></a>
+			        <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+			          <li>
+			          	<a tabindex="-1" href="#">Enceintes de monitoring</a>
+			          </li>
+			          <li>
+			          	<a tabindex="-1" href="#">Logiciels</a>
+			          </li>
+			        </ul>
+			      </li>
+			    </ul>
+			     
+			        
+			      
+			    <!-- </div> -->
+			  </div>
+			</div>  
+
+			<!-- <div id="menu" class="main-navigation" role="navigation">					
 				<span >
-					<strong>Gui/Bass</strong>
-				</span>
+					<strong>Gui/Bass</strong>						
+				</span>					
 				<span>
 					<strong>Batteries</strong>										
 				</span>										
@@ -87,8 +140,13 @@
 				</span>		
 				<span >
 					<strong>Accessoires</strong>
-				</span>																						
-			</div>
+				</span>		
+																								
+			</div> -->
+
+			
+
+
 
 			<div id="contenu" class="row fondcouleur1">								
 							
@@ -203,3 +261,7 @@
 	</div>
 	</body>
 </html>
+
+<script src="jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="VillageGreenFormulaire2.js"></script>

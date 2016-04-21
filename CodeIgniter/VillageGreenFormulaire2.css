@@ -21,8 +21,8 @@
 	margin-right: 0;
 }
 
-#contenu > h4 {
-	margin-top: 5%;
+h4 {
+	margin-top: 8%;
 	margin-bottom: 5%;
 }
 
@@ -44,10 +44,12 @@
 }
 
 #menu span{
-	margin-left: 3%;
-	
+	margin-left: 3%;	
 }
 
+#menu span:hover{
+	cursor: pointer;
+}
 
 
 #logo{
