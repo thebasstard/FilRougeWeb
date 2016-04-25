@@ -103,13 +103,30 @@ h4 {
 
 
 
-#EspaceClient{
-	margin-left: 175px;
+#popover{
+	margin-left: 175px;	
 }
 
-#EspaceClient:hover{
+#popover-content{
+	background-color: rgba (216,211,204, 0.9);
+}
+
+#popover:hover{
 	cursor: pointer;
 }
+
+#email{
+	background-color: #f0eee8;
+	border:2px solid #1b1b1b;
+	
+}
+
+#password{
+	background-color: #f0eee8;
+	border:2px solid #1b1b1b;
+	
+}
+
 
 #search{
 	margin-left: 40%;
@@ -180,10 +197,6 @@ h4 {
 #Envoyer{
 	margin-top: 8%;
 	margin-bottom: 8%;
-}
-
-
-.btn{
 	background-image: url("http://127.0.0.1/VillageGreenWeb/images/Envoyer.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -191,8 +204,8 @@ h4 {
 	outline: none;
 	border: 0px;
 	border-radius: 10px;
-
 }
+
 
 .btn:hover{
 	

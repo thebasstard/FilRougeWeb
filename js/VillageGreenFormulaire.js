@@ -156,3 +156,14 @@ livraison.on("input", function()
 })(jQuery, window, 200); // 200 est le delai en millisecondes
 
 /*fin de code du menu deroulant*/
+
+//formulaire popover
+$('#popover').popover({ 
+    html : true,
+    title: function() {
+      return $("#popover-head").html();
+    },
+    content: function() {
+      return $("#popover-content").html();
+    }
+});

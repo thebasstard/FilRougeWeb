@@ -52,7 +52,7 @@
 							<?php endforeach; ?>				
 						</table>	
 						<div class="form-group col-xs-2 text-center" id="retour">
-						<a href="http://127.0.0.1/VillageGreenWeb/index.php/vgpagedaccueil"><input type="button" value="Retour à la page d'accueil"></input></a>		
+						<a href="http://localhost/VillageGreenWeb"><input type="button" class="btn btn-secondary" value="Retour à la page d'accueil"></input></a>		
 						</div>
 					</form>
 		

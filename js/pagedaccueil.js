@@ -1,16 +1,5 @@
-//formulaire popover de l'espace client
-$('[data-toggle="popover"]').popover();
+/*menu deroulant*/
 
-$('body').on('click', function (e) {
-    $('[data-toggle="popover"]').each(function () {
-        
-        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-            $(this).popover('hide');
-        }
-    });
-});
-
-//menu déroulant rubriques de produits
 (function ($, window, delay) {
   
   var theTimer = 0;
@@ -52,7 +41,17 @@ $('body').on('click', function (e) {
       theElement.removeClass('open');
     }, delay);
   });
-})(jQuery, window, 200); // 200 est le délai en millisecondes
+})(jQuery, window, 200); // 200 est le delai en millisecondes
 
 /*fin de code du menu deroulant*/
 
+//formulaire popover
+$('#popover').popover({ 
+    html : true,
+    title: function() {
+      return $("#popover-head").html();
+    },
+    content: function() {
+      return $("#popover-content").html();
+    }
+});

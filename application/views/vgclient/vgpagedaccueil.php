@@ -36,7 +36,19 @@
 										<button type="submit" id="loupe" class="btn btn-default"></button>								
 								</form>
 									<div>
-										<p id="EspaceClient" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title=""><strong>Espace client</strong></p>
+										<!-- <p id="EspaceClient" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="bottom"  data-original-title="" title=""><strong>Espace client</strong></p> -->
+										<label for="espaceclient" id="popover" data-placement="bottom" data-placement="bottom">Espace client</a>
+										
+										<div id="popover-content" class="hide">
+										  <form>
+										    <label for="email">Email</label>
+            								<input type="email" name="email" id="email" class="form-control input-md">
+            								<label for="password">Mot de passe</label>
+            								<input type="password" name="password" id="password" class="form-control input-md">
+            								<label for="oublie">Mot de passe oublié ?</label>
+            								<label for="compte">Créer un compte</label>
+										  </form>
+										</div>
 									</div>
 									
 																																

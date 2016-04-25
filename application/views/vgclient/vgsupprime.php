@@ -43,7 +43,7 @@
 				            <td><?php echo $client->Adr_Livr; ?></td>
 				            <td><?php echo $client->Categorie; ?></td>
 				          </tr>
-				      	<!--<?php echo "<td><input type='hidden' name='ID_Client' value='" .$client->ID_Client."'/><td>\n"; ?>  première manière pour sélectionner l'id-->
+				      	<!--<?php echo "<td><input type='hidden' name='ID_Client' value='" .$client->id."'/><td>\n"; ?>  première manière pour sélectionner l'id-->
 				      	<input type="hidden" name="id" value="<?php echo $client->id; ?>"/> <!--deuxième manière -->  
 				    </tbody>
 				</table>
@@ -51,7 +51,7 @@
 					<input type="submit" id="delete" class="btn btn-danger" value="Supprimer"/>
 				</div>
 				<div class="form-group col-xs-2 text-center" id="retour">
-					<a href="http://localhost/VillageGreenWeb/index.php/vgrecapitulatif"><input type="button" value="Retour au récapitulatif"></input></a>
+					<a href="http://localhost/VillageGreenWeb/index.php/vgclient/vgrecapitulatif"><input type="button" class="btn btn-secondary" value="Retour au récapitulatif"></input></a>
 				</div>
 			</form>
 		</div>

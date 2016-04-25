@@ -58,7 +58,7 @@
 						<input type="submit" id="update" class="btn btn-primary" value="Modifier"/>									
 					</div>
 					<div class="form-group col-xs-2 text-center" id"retour">	
-						<a href="http://localhost/VillageGreenWeb/index.php/vgrecapitulatif"><input type="button" value="Retour au récapitulatif" ></input></a>
+						<a href="http://localhost/VillageGreenWeb/index.php/vgclient/vgrecapitulatif"><input type="button" class="btn btn-secondary" value="Retour au récapitulatif" ></input></a>
 					</div>
 			</form>
 
