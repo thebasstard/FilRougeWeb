@@ -11,7 +11,7 @@
 	</head>
 	<body>
 
-	<img src="images/fond.png" id="photo"/>
+	<img src="http://127.0.0.1/VillageGreenWeb/images/fond.png" id="photo"/>
 
 	<div class="container">
 		
@@ -23,7 +23,7 @@
 						<div class="row">
 						    
 							    <div class="col-xs-4 col-md-4">
-							      	<img src="images/logo.png" id="logo"/>
+							      	<img src="http://127.0.0.1/VillageGreenWeb/images/logo.png" id="logo"/>
 							    </div>
 							    <div class="col-xs-4 col-md-4">
 									<h1 class="panel-title" align="center" id="titre"><strong>VILLAGE GREEN</strong></h1>										
@@ -256,17 +256,17 @@
 				<div class="row">
 					  <div class="col-xs-4 col-md-4">
 					    <a href="#" class="thumbnail">
-					      <img src="images/top1.png" alt="photo1">
+					      <img src="http://127.0.0.1/VillageGreenWeb/images/top1.png" alt="photo1">
 					    </a>
 					  </div>
 						<div class="col-xs-4 col-md-4">
 				    	<a href="#" class="thumbnail">
-				     	 <img src="images/top2.png" alt="photo2">
+				     	 <img src="http://127.0.0.1/VillageGreenWeb/images/top2.png" alt="photo2">
 				   	 	</a>
 				  	</div>
 				  	<div class="col-xs-4 col-md-4">
 				    	<a href="#" class="thumbnail">
-				     	 <img src="images/top3.png" alt="photo3">
+				     	 <img src="http://127.0.0.1/VillageGreenWeb/images/top3.png" alt="photo3">
 				   	 	</a>
 				  	</div>
 				</div>

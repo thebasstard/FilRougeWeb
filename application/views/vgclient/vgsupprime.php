@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="http://127.0.0.1/VillageGreenWeb/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="http://dl.bienvu.net/ludod/VillageGreenWeb1/bootstrap/css/bootstrap.css" rel="stylesheet">
 		<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-		<link href="http://127.0.0.1/VillageGreenWeb/css/vgsupprime.css" rel="stylesheet">		
+		<link href="http://dl.bienvu.net/ludod/VillageGreenWeb1/css/vgsupprime.css" rel="stylesheet">		
 		<!-- <link href="css/vgsupprime.css" rel="stylesheet"> -->
 		<title>Village Green magasin de musique en ligne</title>
 	</head>
 	<body>
-		<img src="http://127.0.0.1/VillageGreenWeb/images/fond.png" id="photo"/>
+		<img src="http://127.0.0.1/VillageGreenWeb//images/fond.png" id="photo"/>
 
 		
 		<div class="container" id="fond">
@@ -51,7 +51,7 @@
 					<input type="submit" id="delete" class="btn btn-danger" value="Supprimer"/>
 				</div>
 				<div class="form-group col-xs-2 text-center" id="retour">
-					<a href="http://localhost/VillageGreenWeb/index.php/vgclient/vgrecapitulatif"><input type="button" class="btn btn-secondary" value="Retour au récapitulatif"></input></a>
+					<a href="http://dl.bienvu.net/ludod/VillageGreenWeb1/index.php/vgclient/vgrecapitulatif"><input type="button" class="btn btn-secondary" value="Retour au récapitulatif"></input></a>
 				</div>
 			</form>
 		</div>
@@ -60,9 +60,3 @@
 	</body>
 </html>
 
-<!-- <script src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/jquery.js"></script> -->
-<script src="js/jquery.js"></script>
-<!-- <script src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/bootstrap/js/bootstrap.min.js"></script> -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb/CodeIgniter/VillageGreenFormulaire2.js"></script> -->
-<!-- <script type="text/javascript" src="VillageGreenFormulaire2.js"></script> -->

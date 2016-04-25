@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="http://127.0.0.1/VillageGreenWeb/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="http://dl.bienvu.net/ludod/VillageGreenWeb1/bootstrap/css/bootstrap.css" rel="stylesheet">
 		<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
-		<link href="http://127.0.0.1/VillageGreenWeb/css/VillageGreenFormulaire.css" rel="stylesheet">		
+		<link href="http://dl.bienvu.net/ludod/VillageGreenWeb1/css/VillageGreenFormulaire.css" rel="stylesheet">		
 		<!-- <link href="VillageGreenFormulaire.css" rel="stylesheet"> -->
 		<title>Village Green magasin de musique en ligne</title>
 	</head>
@@ -200,7 +200,7 @@
 				
 
 				<div class="row fondcouleur1">	
-					<form class = "vertical" role="form" method="POST" action="http://localhost/Creation_dun_formulaire_dajout/script_ajout.php">
+					<form class = "vertical" role="form" method="POST" action="<?=site_url("vgclient/script_vgformulaire")?>">
 						<div class="form-group col-xs-2 text-center">
 							<h4><strong>Enregistrement</strong></h4>
 						</div>
@@ -234,7 +234,7 @@
 							<input type="submit" id="Envoyer" class="btn" value=""/>
 						</div>	
 						<div class="form-group col-xs-2 text-center" id"retour">	
-						<a href="http://localhost/VillageGreenWeb"><input type="button" class="btn btn-secondary" value="Retour à la page d'accueil" ></input></a>
+						<a href="http://dl.bienvu.net/ludod/VillageGreenWeb1"><input type="button" class="btn btn-secondary" value="Retour à la page d'accueil" ></input></a>
 						</div>				
 					</form>	
 
@@ -247,11 +247,11 @@
 	</body>
 </html>
 
-<script src="http://127.0.0.1/VillageGreenWeb/js/jquery.js"></script>
+<script src="http://127.0.0.1/VillageGreenWeb//js/jquery.js"></script>
 <!-- <script src="js/jquery.js"></script> -->
-<script src="http://127.0.0.1/VillageGreenWeb/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://127.0.0.1/VillageGreenWeb//bootstrap/js/bootstrap.min.js"></script>
 <!-- <script src="js/bootstrap/js/bootstrap.min.js"></script> -->
-<script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb/js/VillageGreenFormulaire.js"></script>
+<script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb//js/VillageGreenFormulaire.js"></script>
 <!-- <script type="text/javascript" src="VillageGreenFormulaire.js"></script> -->
 <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
-<script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb/js/pagedaccueil.js"></script>
+<script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb//js/pagedaccueil.js"></script>

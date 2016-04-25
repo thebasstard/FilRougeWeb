@@ -12,7 +12,7 @@ class Vgclient extends CI_Controller{
 		$this->load->database();
 		$this->load->helper('url');
 
-		$model["recapitulatif"] = $this->db->query('SELECT * FROM client');
+		$model["recapitulatif"] = $this->db->query("SELECT * FROM client");
 
 		$this->load->view('vgclient/vgrecapitulatif', $model);
 	}
