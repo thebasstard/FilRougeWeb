@@ -31,16 +31,18 @@ create table commercial (
 	);
 
 create table client (
-	ID_Client		int NOT NULL AUTO_INCREMENT,
+	id				int NOT NULL AUTO_INCREMENT,
 	Nom_Client		varchar(30),
 	Prenom_Client	varchar(30),
 	Adr_Factur		varchar(50),
 	Adr_Livr		varchar(50),
-	Categorie		bit,
+	Categorie		varchar(20),
 	Coeff			numeric,
+	Authentif		varchar(20),
+	Password		varchar(20),		
 	ID_Commercial	int,
 	FOREIGN KEY (ID_Commercial) REFERENCES commercial(ID_Commercial),
-	PRIMARY KEY (ID_Client)
+	PRIMARY KEY (id)
 	);
 
 create table commande (
@@ -52,8 +54,8 @@ create table commande (
 	Date_Paiement	varchar(20),
 	PTHT			int,
 	Reduc_Sup		int,
-	ID_Client		int,
-	FOREIGN KEY (ID_Client) REFERENCES client(ID_Client),
+	id		int,
+	FOREIGN KEY (id) REFERENCES client(id),
 	PRIMARY KEY (ID_Commande)
 	);
 
@@ -204,23 +206,23 @@ VALUES (53,'Hugues Balloches');
 
 -- set_insert client on;
 
-INSERT INTO client (ID_Client, Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff,ID_Commercial)
-VALUES (3945,'Despintes', 'Jean-René', '2 rue des pins 80000 Amiens','2 rue des pins 80000 Amiens', 1, 2, 51);
+INSERT INTO client (id, Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff, Authentif, Password, ID_Commercial)
+VALUES (3945,'Despintes', 'Jean-René', '2 rue des pins 80000 Amiens','2 rue des pins 80000 Amiens', 'Professionnel', 2,'jeanre98', 'toto23', 51);
 
-INSERT INTO client (ID_Client,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff,ID_Commercial)
-VALUES (1418, 'Dufour', 'Jean-Louis', '56 rue des cajous 75000 Paris', '4 rue barrette 80000 Amiens', 0, 2, 52);
+INSERT INTO client (id,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff, Authentif, Password, ID_Commercial)
+VALUES (1418, 'Dufour', 'Jean-Louis', '56 rue des cajous 75000 Paris', '4 rue barrette 80000 Amiens', 'Particulier', 2,'jeanjean', 'riri', 52);
 
-INSERT INTO client (ID_Client,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff,ID_Commercial)
-VALUES (1515, 'Ducas', 'Titi', '78 rue des binouzes 63000 Clermont-Ferrand', '45 rue du bug 63010 Billon', 0, 1, 53);
+INSERT INTO client (id,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff, Authentif, Password, ID_Commercial)
+VALUES (1515, 'Ducas', 'Titi', '78 rue des binouzes 63000 Clermont-Ferrand', '45 rue du bug 63010 Billon', 'Particulier', 1, 'dudu22', 'lala', 53);
 
-INSERT INTO client (ID_Client,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff,ID_Commercial)
-VALUES (1916, 'Boitrelle', 'Maxime', '1 rue des feuilles 60360 Auchy', '1 rue des feuilles 60360 Auchy', 1, 1, 52);
+INSERT INTO client (id,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff, Authentif, Password, ID_Commercial)
+VALUES (1916, 'Boitrelle', 'Maxime', '1 rue des feuilles 60360 Auchy', '1 rue des feuilles 60360 Auchy', 'Professionnel', 1,'lemotard', 'zr7', 52);
 
-INSERT INTO client (ID_Client,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff,ID_Commercial)
-VALUES (2400, 'Guenot', 'Pierre', '214 avenue des pigeons 80000 Amiens', '54 rue des grous 60000 Beauvais', 1, 1, 51);
+INSERT INTO client (id,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff, Authentif, Password, ID_Commercial)
+VALUES (2400, 'Guenot', 'Pierre', '214 avenue des pigeons 80000 Amiens', '54 rue des grous 60000 Beauvais', 'Particulier', 1, 'piteurhenriz', 'famineetdisette', 51);
 
-INSERT INTO client (ID_Client,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff,ID_Commercial)
-VALUES (850, 'Bessière', 'François', '22 allée des vues 13000 Marseille', '120 rue du grand mage 13000 Marseille', 1, 1, 51);
+INSERT INTO client (id,Nom_Client, Prenom_Client, Adr_Factur, Adr_Livr, Categorie, Coeff, Authentif, Password, ID_Commercial)
+VALUES (850, 'Bessière', 'François', '22 allée des vues 13000 Marseille', '120 rue du grand mage 13000 Marseille', 'Professionnel', 1, 'franco45', 'golf', 51);
 
 -- set_insert client off;
 
@@ -228,28 +230,28 @@ VALUES (850, 'Bessière', 'François', '22 allée des vues 13000 Marseille', '12
 
 -- set_insert commande on;
 
-INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, ID_Client)
+INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, id)
 VALUES (789, 16600, 'carte bancaire', 'saisie', '22/07/2015', '22/07/2015', 14000, 200, 3945);
 
-INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, ID_Client)
+INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, id)
 VALUES (790, 8300, 'virement bancaire', 'en préparation', '25/08/2015', '26/08/2015', 7000, 100, 1418);
 
-INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, ID_Client)
+INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, id)
 VALUES (800, 629, 'paiement en 3 fois', 'facturée', '13/09/2015', '13/11/2015', 540, 20, 1515);
 
-INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, ID_Client)
+INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, id)
 VALUES (856, 290, 'chèque', 'soldée', '22/10/2015', '04/11/2015', 250, 10, 1916);
 
-INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, ID_Client)
+INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, id)
 VALUES (870, 336, 'virement bancaire', 'facturée', '25/10/2015', '30/11/2015', 292, 20, 1515);
 
-INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, ID_Client)
+INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, id)
 VALUES (880, 3689, 'chèque', 'en préparation', '22/01/2016', '27/01/2016', 3490, 50, 1916);
 
-INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, ID_Client)
+INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, id)
 VALUES (889, 3709, 'chèque', 'saisie', '21/02/2016', '27/02/2016', 3490, 30, 2400);
 
-INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, ID_Client)
+INSERT INTO commande (ID_Commande, PTTC, Info_Paiement, Etat_Commande, Date_Commande, Date_Paiement, PTHT, Reduc_Sup, id)
 VALUES (890, 2230, 'carte bancaire', 'facturée', '27/02/2016', '10/03/2016', 1900, 50, 2400);
 
 

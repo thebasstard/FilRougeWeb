@@ -15,53 +15,94 @@ var livraison =$("#Livraison");
 
 nom.on("input", function()
 {
-	if (regexnom.test(nom.val()) == true)
-	{
-		nom.css("backgroundColor", "#CCFF99");
-	}
-	else
-		nom.css("backgroundColor", "red");
+    if($("#Nom").val() == ""){
+      nom.css("backgroundColor", "white");
+    }
+
+    else{
+
+    	if (regexnom.test(nom.val()) == true)
+    	{
+    		nom.css("backgroundColor", "#CCFF99");
+    	}
+    	else{
+
+
+    		nom.css("backgroundColor", "red");
+      } 
+    }
+
 });
 
 prenom.on("input", function()
 {
-	if (regexprenom.test(prenom.val()) == true)
-	{
-		prenom.css("backgroundColor", "#CCFF99");
-	}
-	else
-		prenom.css("backgroundColor", "red");
+  if($("#Prenom").val() == ""){
+      prenom.css("backgroundColor", "white");
+    }
+
+  else{
+
+  	if (regexprenom.test(prenom.val()) == true)
+  	{
+  		prenom.css("backgroundColor", "#CCFF99");
+  	}
+  	else
+  		prenom.css("backgroundColor", "red");
+  }
 });
 
 email.on("input", function()
 {
-	if (regexemail.test(email.val()) == true)
-	{
-		email.css("backgroundColor", "#CCFF99");
-	}
-	else
-		email.css("backgroundColor", "red");
+  if($("#Email").val() == ""){
+      email.css("backgroundColor", "white");
+    }
+
+  else{
+
+    if (regexemail.test(email.val()) == true)
+    {
+      email.css("backgroundColor", "#CCFF99");
+    }
+    else
+      email.css("backgroundColor", "red");
+  }
 });
 
 
 facturation.on("input", function()
 {
-	if (regexfacturation.test(facturation.val()) == true)
-	{
-		facturation.css("backgroundColor", "#CCFF99");
-	}
-	else
-		facturation.css("backgroundColor", "red");
+  if($("#Facturation").val() == ""){
+      facturation.css("backgroundColor", "white");
+    }
+  else{
+
+  	if (regexfacturation.test(facturation.val()) == true)
+  	{
+  		facturation.css("backgroundColor", "#CCFF99");
+  	}
+  	else{     
+  		facturation.css("backgroundColor", "red");
+    }
+  }
 });
 
 livraison.on("input", function()
 {
-	if (regexlivraison.test(livraison.val()) == true)
-	{
-		livraison.css("backgroundColor", "#CCFF99");
-	}
-	else
-		livraison.css("backgroundColor", "red");
+  if($("#Livraison").val() == ""){
+      livraison.css("backgroundColor", "white");
+    }
+
+  else{
+
+  	if (regexlivraison.test(livraison.val()) == true)
+  	{
+  		livraison.css("backgroundColor", "#CCFF99");
+  	}
+  	else{
+  		livraison.css("backgroundColor", "red");
+    }
+  }
+
 });
 
 /*fin de verification des regex*/

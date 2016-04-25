@@ -3,43 +3,45 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- <link href="http://127.0.0.1/VillageGreenWeb/CodeIgniter/bootstrap/css/bootstrap.css" rel="stylesheet">
-		<link href="http://127.0.0.1/VillageGreenWeb/CodeIgniter/villagegreen.css" rel="stylesheet"> -->
-		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-		<link href="VillageGreenFormulaire2.css" rel="stylesheet">
+		<link href="http://127.0.0.1/VillageGreenWeb/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+		<link href="http://127.0.0.1/VillageGreenWeb/css/VillageGreenFormulaire.css" rel="stylesheet">		
+		<!-- <link href="VillageGreenFormulaire.css" rel="stylesheet"> -->
 		<title>Village Green magasin de musique en ligne</title>
 	</head>
 	<body>
 
-		<img src="images/fond.png" id="photo"/>
+		<img src="http://127.0.0.1/VillageGreenWeb/images/fond.png" id="photo"/>
 		<div class="container" id="fond">
 		
 			<div id="page">
 
 				<div class="row">
 					<div class="navbar navbar-default" id="navbar1">
-						<div class="container-fluid">
-							<div class="navbar-header">
-							    <ul class="nav navbar-nav">
-								    <li class="col-xs-2 col-md-2">
-								      	<img src="images/logo.png" id="logo"/>
-								    </li>
-								    <li class="col-xs-5 col-md-5">
+						<!-- <div class="container-fluid"> -->
+							<!-- <div class="navbar-header"> -->
+							    <div class="row">
+						    
+								    <div class="col-xs-4 col-md-4">
+								      	<img src="http://127.0.0.1/VillageGreenWeb/images/logo.png" id="logo"/>
+								    </div>
+								    <div class="col-xs-4 col-md-4">
 										<h1 class="panel-title" align="center" id="titre"><strong>VILLAGE GREEN</strong></h1>										
-									</li>										
-									<li class="col-xs-4 col-md-4">
-										<input type="text" class="form-control" name="recherche" id="recherche"/>								
-									</li>
-									<li class="col-xs-1 col-md-1">
-										<img src="images/Loupe.png" id="loupe"/>
-									</li>	
-									<li>
-										<p id="EspaceClient"><strong>Espace client</strong></p>
-									</li>
-																			
-								</ul>								
-							</div>
-						</div>
+									</div>				
+									
+									<form class="col-xs-4 col-md-4 navbar-form navbar-left" role="search" id="search">
+										<div class="form-group">
+											<input type="text" class="form-control" name="recherche" placeholer="Recherche" id="recherche"/>						
+										</div>
+											<button type="submit" id="loupe" class="btn btn-default"></button>								
+									</form>
+									<div>
+										<p id="EspaceClient" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title=""><strong>Espace client</strong></p>
+									</div>
+																																									
+								</div>								
+							<!-- </div> -->
+						<!-- </div> -->
 					</div>
 				</div>
 
@@ -218,7 +220,10 @@
 						</div>
 						<div class="form-group col-xs-2 text-center">
 							<input type="submit" id="Envoyer" class="btn" value=""/>
-						</div>						
+						</div>	
+						<div class="form-group col-xs-2 text-center" id"retour">	
+						<a href="http://localhost/VillageGreenWeb/index.php/vgpagedaccueil"><input type="button" value="Retour à la page d'accueil" ></input></a>
+						</div>				
 					</form>	
 
 				</div>
@@ -230,7 +235,11 @@
 	</body>
 </html>
 
-<script src="jquery.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="VillageGreenFormulaire2.js"></script>
-
+<script src="http://127.0.0.1/VillageGreenWeb/js/jquery.js"></script>
+<!-- <script src="js/jquery.js"></script> -->
+<script src="http://127.0.0.1/VillageGreenWeb/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb/js/VillageGreenFormulaire.js"></script>
+<!-- <script type="text/javascript" src="VillageGreenFormulaire.js"></script> -->
+<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="http://127.0.0.1/VillageGreenWeb/js/pagedaccueil.js"></script>

@@ -1,16 +1,10 @@
-
-#fond {	
-	width:100%;
-	height:100%;
-	
-}
-
 #photo{
 	width:100%;
 	height:100%;
 	z-index:-1;
 	position:fixed;
 }
+
 
 .navbar {
 	margin-bottom: 0px;
@@ -21,8 +15,8 @@
 	margin-right: 0;
 }
 
-h4 {
-	margin-top: 8%;
+#contenu > h4 {
+	margin-top: 5%;
 	margin-bottom: 5%;
 }
 
@@ -30,7 +24,6 @@ h4 {
 	background-color: #857e77;
 	
 }
-
 
 #menu{
 	background-color: #ece8e3;
@@ -47,26 +40,30 @@ h4 {
 	margin-left: 25%;
 }
 
+
+#navbar2{
+	background-color: #857e77;
+	margin-right:0%;
+	margin-left: 0%;
+	
+
+}
+
 #logo{
 	width:50px;
 	height:50px;
-	margin-top: 10px;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-bottom: 5%;
 }
 
 #titre{
 	font-family: 'lane_-_poshregular';
-	margin-top: 30px;
-	margin-left: 150px;
+	margin-top: 10%;
+	margin-left: 0px;
 }
 
-#recherche{
-	background-color: #c3beb8;
-	border:2px solid #1b1b1b;
-	margin-top: 10px;
-	margin-left:110px;
-	max-width: 150px;
-	max-height: 28px;
-}
+
 
 @font-face {
     font-family: 'lane_-_narrowregular';
@@ -107,14 +104,37 @@ h4 {
 
 
 #EspaceClient{
-	margin-left: 175px;
+	margin-left: 85%;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+#EspaceClient:hover{
+	cursor: pointer;
+}
+
+#recherche{
+	background-color: #c3beb8;
+	border:2px solid #1b1b1b;
+	
 }
 
 #loupe{
-	margin-top: 8px;
-	height:33px;
-	width:33px;
-	margin-left: 20px;
+	background-image: url("http://127.0.0.1/VillageGreenWeb/images/Loupe.png");
+	height: 50px;
+	width:50px;
+	border-radius: 30px;
+	outline: none;
+	border: 0px;
+	background-repeat: no-repeat;
+	
+}
+
+#search{
+	margin-left: 40%;
+	margin-top: 0px;
+
+
 }
 
 .fondcouleur1 {
@@ -123,85 +143,78 @@ h4 {
 
 }
 
-.form-group{
-	width:47%;
-	margin-left: 25%;
+
+#contenu{
+	/*background-color: rgba(216,211,204, 0.9);*/		
+	padding-bottom: 12%;
+	width:100%;
+	padding-left: 3%;
+	padding-right: 3%;	
+	min-height:100%;
 }
 
-#page{	
+#page{
+	
 	top:0;
-	bottom:0;	
+	bottom:0;
 	margin-left: 100px;
-	margin-right: 100px;	
+	margin-right: 100px;
+	
+}
+
+.container{
+	height:100%;
+	width:100%;
 }
 
 
-#Nom{
-	font-weight: bold;
-	margin-bottom: 3%;
+img{
+	height:100%;
+	width:100%;
 }
 
-#Prenom{
-	font-weight: bold;
-	margin-bottom: 3%;
-}
-
-#Email{
-	font-weight: bold;
-	margin-bottom: 3%;
-}
-
-#Facturation{
-	font-weight: bold;
-	margin-bottom: 3%;
-}
-
-#Livraison{
-	font-weight: bold;
-	margin-bottom: 3%;
-}
-
-#Client{
-	font-weight:bold;
-	margin-bottom: 3%;
-}
-
-#Envoyer{
-	margin-top: 8%;
-	margin-bottom: 8%;
+.item {
+	width: 100%; 
+	height: 100%;
 }
 
 #Paiements{
-	height: 33px;
-	width:33px;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 #Paiements:hover{
 	cursor: pointer;
+	
 }
 
 #cgv{
-	margin-top: 10px;
-	padding-left: 60px;
+	margin-top: 4%;
+	padding-left: 10%;
+	margin-left: 2%;
 }
 
 #contact{
-	margin-top:10px;
-	padding-left: 120px;
+	margin-top:4%;
+	padding-left: 10%;
+	margin-left: 7%;
 }
 
 #adresse{
-	padding-left: 130px;
+	margin-top:3%;
+	padding-left: 18%;
+	
 }
 
 #ReseauxSociaux{
 	float:right;
+	margin-top: 3%;
 }
 
 #Twitter{
 	box-shadow: 0 2px 2px #999;
-	width:30px;
-	height:30px;	
+	width:38px;
+	height:38px;	
 }
 
 #Twitter:hover{
@@ -219,8 +232,9 @@ h4 {
 
 #Facebook{
 	box-shadow: 0 2px 2px #999;
-	width:30px;
-	height:30px;	
+	width:38px;
+	height:38px;	
+	margin-left: 10%;
 }
 
 #Facebook:hover{
@@ -234,21 +248,14 @@ h4 {
     content: "\f09a"; /* add facebook icon */
 }
 
-.btn{
-	background-image: url("images/Envoyer.png");
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	width:40%;
-	outline: none;
-	border: 0px;
-	border-radius: 10px;
 
-}
 
-.btn:hover{
-	
-}
 
-.form-control{
 
-}
+
+
+
+
+
+
+
